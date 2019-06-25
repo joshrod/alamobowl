@@ -16,3 +16,4 @@ temp
 tmp
 .tmp
 dist/
+node_modules
