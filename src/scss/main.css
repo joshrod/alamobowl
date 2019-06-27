@@ -5,10 +5,6 @@
 /* ARROWS */
 /* CHEVRONS */
 /* CLEARFIX MIXIN */
-section {
-  *zoom: 1;
-}
-
 section:before, section:after {
   content: " ";
   display: table;
@@ -56,6 +52,11 @@ h1, h2, h3, h4, h5, p {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
   display: block;
@@ -63,6 +64,23 @@ a {
 
 p {
   font-family: "Karla", sans-serif;
+}
+
+.full-page {
+  width: 100%;
+  height: 100%;
+}
+
+.full-page .bg-image {
+  width: 100%;
+  height: 40%;
+}
+
+.full-page #fans {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../../img/guys.jpg");
 }
 
 header {
@@ -86,8 +104,30 @@ header .logo {
   width: 10rem;
 }
 
+@media only screen and (min-width: 680px) {
+  header .logo {
+    width: 15rem;
+  }
+}
+
 header nav {
   display: none;
+}
+
+@media only screen and (min-width: 680px) {
+  header nav {
+    display: block;
+  }
+}
+
+header nav .nav-link {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #101820;
+}
+
+header nav .nav-link:not(:first-of-type) {
+  margin-left: 3rem;
 }
 
 header .hamburger {
@@ -106,5 +146,19 @@ header .hamburger span:nth-of-type(2n) {
   width: 3rem;
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
+}
+
+.sidebar {
+  display: none;
+}
+
+.frontpage-main {
+  width: 100%;
+  height: 500%;
+  overflow: hidden;
+}
+
+.frontpage-main .full-page {
+  height: 20%;
 }
 /*# sourceMappingURL=main.css.map */

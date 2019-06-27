@@ -10,10 +10,25 @@ header {
 
     .logo {
         width: 10rem;
+        @include breakpoint(md) {
+            width: 15rem;
+        }
     }
 
     nav {
         display: none;
+        @include breakpoint(md) {
+            display: block;
+        }
+
+        .nav-link {
+            display: inline-block;
+            text-transform: uppercase;
+            color: $black;
+            &:not(:first-of-type) {
+                margin-left: 3rem;
+            }
+        }
     }
 
     .hamburger {

@@ -3,5 +3,10 @@
 
 @import 'base/reset';
 
+@import 'components/full-page';
+@import 'components/gradients';
+
 @import 'layout/header';
 @import 'layout/sidebar';
+
+@import 'pages/home';
