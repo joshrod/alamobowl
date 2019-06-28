@@ -69,18 +69,44 @@ p {
 .full-page {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .full-page .bg-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 40%;
 }
 
 .full-page #fans {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   background-image: url("../../../img/guys.jpg");
+}
+
+.full-page #partner {
+  background-position: center bottom;
+  background-image: url("../../../img/kiolbassa.jpg");
+}
+
+.white-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, white), to(white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 25%, white 100%);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+  z-index: 3;
+}
+
+.blue-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 112, 172, 0)), color-stop(25%, #0070ac), to(#0070ac));
+  background: linear-gradient(to bottom, rgba(0, 112, 172, 0) 0%, #0070ac 25%, #0070ac 100%);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+  z-index: 3;
 }
 
 header {
