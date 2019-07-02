@@ -66,6 +66,48 @@ p {
   font-family: "Karla", sans-serif;
 }
 
+.primary-button {
+  width: 16rem;
+  height: 3.5rem;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  line-height: 3.4rem;
+}
+
+.blue-button {
+  background-color: #0070ac;
+  border-color: white;
+  color: white;
+}
+
+.yellow-button {
+  background-color: #ffcf06;
+  border-color: white;
+  color: #101820;
+}
+
+.white-button {
+  background-color: white;
+  border-color: #101820;
+  color: #101820;
+}
+
+.black-button {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+.red-button {
+  background-color: #d8262f;
+  border-color: black;
+  color: white;
+}
+
 .full-page {
   width: 100%;
   position: relative;

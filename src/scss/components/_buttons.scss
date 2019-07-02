@@ -1,0 +1,41 @@
+.primary-button {
+    width: 16rem;
+    height: 3.5rem;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    line-height: 3.4rem;
+}
+
+.blue-button {
+    background-color: $blue;
+    border-color: white;
+    color: white;
+}
+
+.yellow-button {
+    background-color: $yellow;
+    border-color: white;
+    color: $black;
+}
+
+.white-button {
+    background-color: white;
+    border-color: $black;
+    color: $black;
+}
+
+.black-button {
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+
+.red-button {
+    background-color: $red;
+    border-color: black;
+    color: white;
+}
