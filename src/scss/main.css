@@ -68,7 +68,6 @@ p {
 
 .full-page {
   width: 100%;
-  height: 100%;
   position: relative;
 }
 
@@ -89,24 +88,58 @@ p {
   background-image: url("../../../img/kiolbassa.jpg");
 }
 
+.full-page .fullpage-copy {
+  z-index: 4;
+  position: absolute;
+}
+
+.full-page .fullpage-copy .desktop-copy {
+  display: none;
+}
+
 .white-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, white), to(white));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 25%, white 100%);
   width: 100%;
   position: absolute;
-  bottom: 0;
   height: 80%;
   z-index: 3;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, white), to(white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 25%, white 100%);
 }
 
 .blue-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 112, 172, 0)), color-stop(25%, #0070ac), to(#0070ac));
-  background: linear-gradient(to bottom, rgba(0, 112, 172, 0) 0%, #0070ac 25%, #0070ac 100%);
   width: 100%;
   position: absolute;
-  bottom: 0;
   height: 80%;
   z-index: 3;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 112, 172, 0)), color-stop(25%, #0070ac), to(#0070ac));
+  background: linear-gradient(to bottom, rgba(0, 112, 172, 0) 0%, #0070ac 25%, #0070ac 100%);
+}
+
+.blue-filter {
+  background: rgba(0, 112, 172, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+}
+
+.black-gradient {
+  width: 100%;
+  position: absolute;
+  height: 80%;
+  z-index: 3;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(25%, black), to(black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 25%, black 100%);
+}
+
+.primary-heading {
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
 }
 
 header {
@@ -124,6 +157,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 99;
 }
 
 header .logo {

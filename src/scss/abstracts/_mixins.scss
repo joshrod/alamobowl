@@ -108,6 +108,19 @@
       }
    }
 }
+
+@mixin gradient($pos: bottom) {
+   width: 100%;
+   position: absolute;
+   height: 80%;
+   z-index: 3;
+   @if ($pos == bottom) {
+      bottom: 0;
+   }
+   @else {
+      top: 0;
+   }
+}
  
   /* CLEARFIX MIXIN */
 %clearfix {
