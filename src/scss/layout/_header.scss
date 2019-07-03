@@ -8,6 +8,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 99;
+    transition: 0.4s transform;
 
     .logo {
         width: 10rem;
@@ -32,7 +33,7 @@ header {
         }
     }
 
-    .hamburger {
+    .menu {
         display: block;
         cursor: pointer;
 

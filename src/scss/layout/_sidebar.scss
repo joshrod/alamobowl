@@ -1,3 +1,18 @@
 .sidebar {
-    display: none;
+    width: 24rem;
+    height: 100%;
+    position: fixed;
+    right: -24rem;
+    background-color: black;
+    transition: 0.4s transform;
+}
+
+.sidebar-open {
+    transform: translateX(-24rem);
+    transition: 0.4s transform;
+}
+
+.open-sidebar {
+    transform: translateX(-24rem);
+    transition: 0.4s transform;
 }

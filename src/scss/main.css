@@ -41,6 +41,13 @@ body {
   font-size: 1.6rem;
 }
 
+main {
+  -webkit-transition: 0.4s -webkit-transform;
+  transition: 0.4s -webkit-transform;
+  transition: 0.4s transform;
+  transition: 0.4s transform, 0.4s -webkit-transform;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -67,15 +74,16 @@ p {
 }
 
 .primary-button {
-  width: 16rem;
-  height: 3.5rem;
+  width: 14rem;
+  height: 3.3rem;
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
-  line-height: 3.4rem;
+  line-height: 3.3rem;
+  font-size: 1.4rem;
 }
 
 .blue-button {
@@ -133,6 +141,7 @@ p {
 .full-page .fullpage-copy {
   z-index: 4;
   position: absolute;
+  text-align: center;
 }
 
 .full-page .fullpage-copy .desktop-copy {
@@ -184,6 +193,18 @@ p {
   font-size: 4rem;
 }
 
+.black-heading {
+  color: black;
+}
+
+.white-heading {
+  color: white;
+}
+
+.blue-heading {
+  color: #0070ac;
+}
+
 header {
   width: 100%;
   padding-top: 1rem;
@@ -200,6 +221,10 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 99;
+  -webkit-transition: 0.4s -webkit-transform;
+  transition: 0.4s -webkit-transform;
+  transition: 0.4s transform;
+  transition: 0.4s transform, 0.4s -webkit-transform;
 }
 
 header .logo {
@@ -232,26 +257,52 @@ header nav .nav-link:not(:first-of-type) {
   margin-left: 3rem;
 }
 
-header .hamburger {
+header .menu {
   display: block;
   cursor: pointer;
 }
 
-header .hamburger span {
+header .menu span {
   width: 2rem;
   height: 1px;
   background-color: black;
   display: block;
 }
 
-header .hamburger span:nth-of-type(2n) {
+header .menu span:nth-of-type(2n) {
   width: 3rem;
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
 }
 
 .sidebar {
-  display: none;
+  width: 24rem;
+  height: 100%;
+  position: fixed;
+  right: -24rem;
+  background-color: black;
+  -webkit-transition: 0.4s -webkit-transform;
+  transition: 0.4s -webkit-transform;
+  transition: 0.4s transform;
+  transition: 0.4s transform, 0.4s -webkit-transform;
+}
+
+.sidebar-open {
+  -webkit-transform: translateX(-24rem);
+          transform: translateX(-24rem);
+  -webkit-transition: 0.4s -webkit-transform;
+  transition: 0.4s -webkit-transform;
+  transition: 0.4s transform;
+  transition: 0.4s transform, 0.4s -webkit-transform;
+}
+
+.open-sidebar {
+  -webkit-transform: translateX(-24rem);
+          transform: translateX(-24rem);
+  -webkit-transition: 0.4s -webkit-transform;
+  transition: 0.4s -webkit-transform;
+  transition: 0.4s transform;
+  transition: 0.4s transform, 0.4s -webkit-transform;
 }
 
 .frontpage-main {
