@@ -1,29 +1,44 @@
 .full-page {
-    width: 100%;
-    position: relative;
+	width: 100%;
+	position: relative;
 
-    .bg-image {
-        @include background;
-        width: 100%;
-        height: 40%;
-    }
+	.bg-image {
+		@include background;
+		width: 100%;
+		height: 40%;
+		position: absolute;
+	}
 
-    #fans {
-        background-image: url('../../../img/guys.jpg');
-    }
+	#fans {
+		background-image: url("../../../img/guys.jpg");
+		bottom: 0;
+	}
 
-    #partner {
-        background-position: center bottom;
-        background-image: url('../../../img/kiolbassa.jpg');
-    }
+	#partner {
+		background-position: center bottom;
+		background-image: url("../../../img/kiolbassa.jpg");
+		top: 0;
+	}
 
-    .fullpage-copy {
-        z-index: 4;
-        position: absolute;
-        text-align: center;
+	.fullpage-copy {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		position: absolute;
+		z-index: 4;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%);
 
-        .desktop-copy {
-            display: none;
-        }
-    }
+		.desktop-copy {
+			display: none;
+		}
+
+		p {
+			margin-top: 2rem;
+		}
+
+		.cta-buttons {
+			margin-top: 2rem;
+		}
+	}
 }

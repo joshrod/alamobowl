@@ -1,18 +1,32 @@
 .sidebar {
-    width: 24rem;
-    height: 100%;
-    position: fixed;
-    right: -24rem;
-    background-color: black;
-    transition: 0.4s transform;
+	width: 24rem;
+	height: 100%;
+	padding: 4rem;
+	position: fixed;
+	right: -24rem;
+	background-color: black;
+	transition: 0.4s transform;
+
+	.sidebar-nav {
+		margin-top: 15%;
+		display: block;
+
+		.sidebar-link {
+			color: white;
+			text-transform: uppercase;
+			&:not(:first-of-type) {
+				margin-top: 2rem;
+			}
+		}
+	}
 }
 
 .sidebar-open {
-    transform: translateX(-24rem);
-    transition: 0.4s transform;
+	transform: translateX(-24rem);
+	transition: 0.4s transform;
 }
 
 .open-sidebar {
-    transform: translateX(-24rem);
-    transition: 0.4s transform;
+	transform: translateX(-24rem);
+	transition: 0.4s transform;
 }
