@@ -1,0 +1,61 @@
+.newsletter {
+    text-align: center;
+
+    h1 {
+        font-family: $rubik;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        color: white;
+        font-weight: 500;
+    }
+
+    p {
+        margin-top: 2rem;
+        font-family: $rubik;
+        color: white;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+    .fba-logo {
+        width: 18rem;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .input-form {
+        width: 100%;
+        margin-top: 2rem;
+        position: relative;
+        overflow: hidden;
+
+        #email-input {
+            width: calc(100% - 8rem);
+            height: 3.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: 1.2rem;
+            font-family: $rubik;
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            float: left;
+            &::placeholder {
+                color: white;
+                font-style: italic;
+                text-align: center;
+            }
+        }
+
+        #submit-btn {
+            width: 8rem;
+            height: 3.5rem;
+            float: right;
+            background: $yellow;
+            font-family: $rubik;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}

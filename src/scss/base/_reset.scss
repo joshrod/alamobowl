@@ -22,7 +22,7 @@ body {
 	font-size: 1.6rem;
 }
 
-main {
+main, footer {
 	transition: 0.4s transform;
 }
 
@@ -53,4 +53,8 @@ a {
 
 p {
     font-family: $karla;
+}
+
+.desktop-only {
+	display: none;
 }

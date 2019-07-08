@@ -53,7 +53,7 @@
 					</h1>
 					<p>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						<span class="desktop-copy"
+						<span class="desktop-only"
 							>Saepe neque odit in quasi, nobis totam consectetur aliquid
 							inventore illo earum quaerat, necessitatibus odio corporis
 							incidunt iure voluptas. Tempore, asperiores accusamus!
@@ -71,13 +71,12 @@
 				<div class="bg-image" id="fans"></div>
 			</section>
 			<section class="full-page">
-				<div class="bg-image" id="partner"></div>
 				<div class="blue-filter"></div>
 				<div class="blue-gradient"></div>
 				<div class="fullpage-copy">
 					<h1 class="primary-heading white-heading">Let's Partner Together.</h1>
-					<p>
-						<span class="desktop-copy"
+					<p class="white-copy">
+						<span class="desktop-only"
 							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Temporibus aliquid, alias quis culpa exercitationem quidem facilis
 							quos animi enim!</span
@@ -94,21 +93,17 @@
 						>
 					</div>
 				</div>
+				<div class="bg-image" id="partner"></div>
 			</section>
 			<section class="full-page">
-				<div class="bg-image">
-					<img src="/img/golf.jpg" alt="Valero Alamo Bowl Events" />
-				</div>
 				<div class="black-gradient"></div>
 				<div class="fullpage-copy">
 					<h1 class="primary-heading white-heading">
 						Have Fun Year-Round With Us.
 					</h1>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-						ipsam, rem fuga vel dolorem totam nisi ea neque unde laudantium iure
-						architecto est officia iste doloremque omnis! Laudantium,
-						dignissimos recusandae.
+					<p class="white-copy">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="desktop-only"> Eligendi
+						ipsam, rem fuga vel dolorem totam nisi ea neque unde laudantium iure architecto est officia iste doloremque omnis!</span> Laudantium, dignissimos recusandae.
 					</p>
 					<div class="cta-buttons">
 						<a href="javascript:void(0);" class="primary-button yellow-button"
@@ -116,21 +111,18 @@
 						>
 					</div>
 				</div>
+				<div class="bg-image" id="golf"></div>
 			</section>
 			<section class="full-page">
-				<div class="bg-image">
-					<img src="/img/boat.jpg" alt="San Antonio River Boat" />
-				</div>
 				<div class="white-gradient"></div>
 				<div class="fullpage-copy">
 					<h1 class="primary-heading blue-heading">
 						Come Explore San Antonio!
 					</h1>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+					<p class="gray-copy">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.<span class="desktop-only"> Molestias
 						facilis, sit ut eos atque nesciunt ab quaerat dolore incidunt non
-						consequatur velit! Rem, odit voluptatibus! Facilis nihil repellendus
-						inventore quis!
+						consequatur velit!</span> Rem, odit voluptatibus! Facilis nihil repellendus inventore quis!
 					</p>
 					<div class="cta-buttons">
 						<a href="javascript:void(0);" class="primary-button red-button"
@@ -138,9 +130,11 @@
 						>
 					</div>
 				</div>
+				<div class="bg-image" id="boat"></div>
 			</section>
 			<section class="full-page">
 				<div class="news-carousel">
+					<h2 class="news-category">Featured News</h2>
 					<div class="news-article">
 						<div class="news-image">
 							<img
@@ -149,29 +143,47 @@
 							/>
 						</div>
 						<div class="news-copy">
-							<h2 class="news-category">Featured News</h2>
+							<h2 class="news-category desktop-only">Featured News</h2>
 							<h1 class="news-heading">2018 Valero Alamo Bowl Champions</h1>
 							<hr class="news-separator" />
 							<h3 class="news-secondary">
 								Defense Leads Cougars Past Cyclones
 							</h3>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Expedita dolorem ex excepturi iste nulla distinctio itaque
+								<span class="desktop-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem ex excepturi iste nulla distinctio itaque
 								deleniti ipsam odio! Possimus qui tempore illum ipsam quae neque
 								et asperiores natus voluptatem. Lorem ipsum dolor sit amet
 								consectetur adipisicing elit. Qui modi consectetur, corrupti
 								veritatis, eos corporis necessitatibus fuga sed soluta
 								voluptatem deserunt explicabo obcaecati! Cupiditate libero
-								pariatur adipisci, ad rem architecto.
+								pariatur adipisci, ad rem architecto.</span>
 							</p>
-							<a href="javascript:void(0);" class="button-white">Read More</a>
+							<a href="javascript:void(0);" class="news-button">Read More</a>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 		<footer>
+			<div class="newsletter">
+				<h1>Stay In the Action<br />With Our Newsletter</h1>
+				<form action="javascript:void(0);" class="input-form">
+					<input type="email" name="email" id="email-input" placeholder="Enter your email address" />
+					<input type="submit" value="Sign Up" id="submit-btn" />
+				</form>
+				<p>
+					Sign up for our newsletter to get all the latest updates and offers
+				</p>
+				<div class="fba-logo">
+					<img src="/img/fba-logo.png" alt="Football Bowl Association Logo" />
+				</div>
+			</div>
+			<div class="footer-player desktop-only">
+				<img
+					src="/img/td-player.png"
+					alt="Valero Alamo Bowl Player Celebrating"
+				/>
+			</div>
 			<div class="footer-info">
 				<div class="social-media">
 					<img src="/img/youtube-dark.svg" alt="Valero Alamo Bowl YouTube" />
@@ -192,23 +204,6 @@
 					<a href="mailto:info@alamobowl.com">info@alamobowl.com</a>
 				</div>
 			</div>
-			<div class="footer-player">
-				<img
-					src="/img/td-player.png"
-					alt="Valero Alamo Bowl Player Celebrating"
-				/>
-			</div>
-			<form action="javascript:void(0);" class="newsletter">
-				<h1>Stay In the Action<br />With Our Newsletter</h1>
-				<input type="email" name="email" id="email-input" />
-				<input type="submit" value="Sign Up" class="submit-btn" />
-				<p>
-					Sign up for our newsletter to get all the latest updates and offers
-				</p>
-				<div class="fba-logo">
-					<img src="/img/fba-logo.svg" alt="Football Bowl Association Logo" />
-				</div>
-			</form>
 		</footer>
 		<script src="js/main.js"></script>
 	</body>

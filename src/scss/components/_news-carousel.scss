@@ -1,0 +1,38 @@
+.news-carousel {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .news-category {
+		margin-top: 2rem;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: bold;
+		color: $gray;
+	}
+
+    .news-article {
+        width: 100%;
+        padding: 2rem;
+
+        .news-copy {
+            margin-top: 1.5rem;
+
+            .news-heading {
+                text-transform: uppercase;
+                color: $blue;
+                font-size: 2rem;
+            }
+
+            .news-secondary {
+                text-transform: uppercase;
+                font-size: 1.6rem;
+            }
+
+            .news-button {
+                margin-top: 2rem;
+            }
+        }
+    }
+}

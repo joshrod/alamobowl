@@ -68,6 +68,19 @@
 	}
 }
 
+@mixin button($width: 14rem, $height: 3.3rem) {
+	width: $width;
+	height: $height;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 4px;
+	line-height: $height;
+	font-size: 1.4rem;
+}
+
 /* CHEVRONS */
 @mixin chevron($direction: top, $size: 1.1rem, $color: white) {
 	&::before {

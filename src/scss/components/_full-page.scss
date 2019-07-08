@@ -15,9 +15,20 @@
 	}
 
 	#partner {
-		background-position: center bottom;
 		background-image: url("../../../img/kiolbassa.jpg");
-		top: 0;
+		bottom: 0;
+	}
+
+	#golf {
+		background-position: center top;
+		background-image: url('../../../img/golf.jpg');
+		bottom: 0;
+
+	}
+
+	#boat {
+		background-image: url('../../../img/boat.jpg');
+		bottom: 0;
 	}
 
 	.fullpage-copy {
@@ -29,8 +40,12 @@
 		top: 50%;
 		transform: translateY(-50%);
 
-		.desktop-copy {
-			display: none;
+		.white-copy {
+			color: white;
+		}
+
+		.gray-copy {
+			color: $gray-text;
 		}
 
 		p {
