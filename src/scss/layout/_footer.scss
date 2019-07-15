@@ -1,5 +1,5 @@
 footer {
-    padding: 2rem;
+    padding: 4rem 2rem;
     background: black;
 
     //* View newsletter.scss for newsletter-specific stylings *
@@ -7,15 +7,42 @@ footer {
     .footer-info {
         width: 100%;
         overflow: hidden;
+        text-align: center;
 
         .social-media {
             width: 100%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
             display: flex;
             justify-content: center;
 
             img {
-                width: 4rem;
+                width: 3.5rem;
+                &:not(:first-of-type) {
+                    margin-left: 1rem;
+                }
             }
         }
+
+        h5 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+
+        .address {
+            margin-top: 2rem;
+            color: white;
+        }
+
+        .contact {
+            margin-top: 2rem;
+            
+            a {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+        
     }
 }

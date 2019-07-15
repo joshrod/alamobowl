@@ -6,6 +6,10 @@
 	right: -24rem;
 	background-color: black;
 	transition: 0.4s transform;
+	@include breakpoint(md) {
+		width: 28rem;
+		right: -28rem;
+	}
 
 	.sidebar-nav {
 		margin-top: 15%;
@@ -24,9 +28,15 @@
 .sidebar-open {
 	transform: translateX(-24rem);
 	transition: 0.4s transform;
+	@include breakpoint(md) {
+		transform: translateX(-28rem);
+	}
 }
 
 .open-sidebar {
 	transform: translateX(-24rem);
 	transition: 0.4s transform;
+	@include breakpoint(md) {
+		transform: translateX(-28rem);
+	}
 }

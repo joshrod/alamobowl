@@ -160,6 +160,12 @@ p {
   bottom: 0;
 }
 
+@media only screen and (min-width: 680px) {
+  .full-page #partner {
+    background-position: center 80%;
+  }
+}
+
 .full-page #golf {
   background-position: center top;
   background-image: url("../../../img/golf.jpg");
@@ -172,6 +178,7 @@ p {
 }
 
 .full-page .fullpage-copy {
+  width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
   position: absolute;
@@ -241,6 +248,14 @@ p {
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
   font-size: 4rem;
+}
+
+@media only screen and (min-width: 680px) {
+  .primary-heading {
+    font-size: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 .black-heading {
@@ -377,17 +392,20 @@ p {
 }
 
 footer {
-  padding: 2rem;
+  padding: 4rem 2rem;
   background: black;
 }
 
 footer .footer-info {
   width: 100%;
   overflow: hidden;
+  text-align: center;
 }
 
 footer .footer-info .social-media {
   width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +415,31 @@ footer .footer-info .social-media {
 }
 
 footer .footer-info .social-media img {
-  width: 4rem;
+  width: 3.5rem;
+}
+
+footer .footer-info .social-media img:not(:first-of-type) {
+  margin-left: 1rem;
+}
+
+footer .footer-info h5 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+footer .footer-info .address {
+  margin-top: 2rem;
+  color: white;
+}
+
+footer .footer-info .contact {
+  margin-top: 2rem;
+}
+
+footer .footer-info .contact a {
+  color: white;
+  text-decoration: underline;
 }
 
 header {
@@ -483,6 +525,13 @@ header .menu span:nth-of-type(2n) {
   transition: 0.4s transform, 0.4s -webkit-transform;
 }
 
+@media only screen and (min-width: 680px) {
+  .sidebar {
+    width: 28rem;
+    right: -28rem;
+  }
+}
+
 .sidebar .sidebar-nav {
   margin-top: 15%;
   display: block;
@@ -506,6 +555,13 @@ header .menu span:nth-of-type(2n) {
   transition: 0.4s transform, 0.4s -webkit-transform;
 }
 
+@media only screen and (min-width: 680px) {
+  .sidebar-open {
+    -webkit-transform: translateX(-28rem);
+            transform: translateX(-28rem);
+  }
+}
+
 .open-sidebar {
   -webkit-transform: translateX(-24rem);
           transform: translateX(-24rem);
@@ -513,6 +569,13 @@ header .menu span:nth-of-type(2n) {
   transition: 0.4s -webkit-transform;
   transition: 0.4s transform;
   transition: 0.4s transform, 0.4s -webkit-transform;
+}
+
+@media only screen and (min-width: 680px) {
+  .open-sidebar {
+    -webkit-transform: translateX(-28rem);
+            transform: translateX(-28rem);
+  }
 }
 
 .frontpage-main {

@@ -17,6 +17,9 @@
 	#partner {
 		background-image: url("../../../img/kiolbassa.jpg");
 		bottom: 0;
+		@include breakpoint(md) {
+			background-position: center 80%;
+		}
 	}
 
 	#golf {
@@ -32,6 +35,7 @@
 	}
 
 	.fullpage-copy {
+		width: 100%;
 		padding-left: 1rem;
 		padding-right: 1rem;
 		position: absolute;
