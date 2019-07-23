@@ -35,6 +35,10 @@
 		@media only screen and (min-width: 1024px) {
 			@content;
 		}
+	}  @else if $point == lg-landscape {
+		@media only screen and (min-width: 1024px) and (orientation: landscape) {
+			@content;
+		}
 	} @else if $point == md {
 		@media only screen and (min-width: 680px) {
 			@content;
@@ -122,6 +126,9 @@
 		top: 0;
 	} @else {
 		bottom: 0;
+	}
+	@include breakpoint(md) {
+		height: 55%;
 	}
 }
 

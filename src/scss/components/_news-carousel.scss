@@ -9,25 +9,42 @@
 		text-transform: uppercase;
 		text-align: center;
 		font-weight: bold;
-		color: $gray;
+        color: $gray;
+        @include breakpoint(md) {
+            margin-top: 0;
+            margin-bottom: 3rem;
+        }
 	}
 
     .news-article {
         width: 100%;
         padding: 2rem;
+        @include breakpoint(md) {
+            padding-left: 8%;
+            padding-right: 8%;
+        }
 
         .news-copy {
             margin-top: 1.5rem;
+            @include breakpoint(md) {
+                margin-top: 4rem;
+            }
 
             .news-heading {
                 text-transform: uppercase;
                 color: $blue;
                 font-size: 2rem;
+                @include breakpoint(md) {
+                    font-size: 3rem;
+                }
             }
 
             .news-secondary {
                 text-transform: uppercase;
                 font-size: 1.6rem;
+                @include breakpoint(md) {
+                    font-size: 1.8rem;
+                }
             }
 
             .news-button {

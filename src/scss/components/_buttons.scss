@@ -37,4 +37,7 @@
     background-color: white;
     border-color: $black;
     color: $black;
+    @include breakpoint(md) {
+        @include button(13rem, 3.8rem);
+    }
 }
