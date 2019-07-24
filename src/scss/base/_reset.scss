@@ -57,4 +57,7 @@ p {
 
 .desktop-only {
 	display: none;
+	@include breakpoint(lg-landscape) {
+		display: block;
+	}
 }

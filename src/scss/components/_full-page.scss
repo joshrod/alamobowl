@@ -10,30 +10,9 @@
 		@include breakpoint(md) {
 			height: 70%;
 		}
-	}
-
-	#fans {
-		background-image: url("../../../img/guys.jpg");
-		bottom: 0;
-	}
-
-	#partner {
-		background-image: url("../../../img/kiolbassa.jpg");
-		bottom: 0;
-		@include breakpoint(md) {
-			background-position: center 80%;
+		@include breakpoint(lg-landscape) {
+			height: 100%;
 		}
-	}
-
-	#golf {
-		background-position: center top;
-		background-image: url('../../../img/golf.jpg');
-		bottom: 0;
-	}
-
-	#boat {
-		background-image: url('../../../img/boat.jpg');
-		bottom: 0;
 	}
 
 	.fullpage-copy {
@@ -47,6 +26,10 @@
 		transform: translateY(-50%);
 		@include breakpoint(md) {
 			top: 28%;
+		}
+		@include breakpoint(lg-landscape) {
+			padding-left: 0;
+			padding-right: 0;
 		}
 
 		.white-copy {
@@ -63,6 +46,97 @@
 
 		.cta-buttons {
 			margin-top: 2rem;
+		}
+	}
+}
+
+#fans {
+
+	.bg-image {
+		background-image: url("../../../img/guys.jpg");
+		bottom: 0;
+		@include breakpoint(lg-landscape) {
+			width: 70%;
+			bottom: auto;
+			right: 0;
+			background-position: right center;
+		}
+	}
+
+	.white-gradient {
+		@include breakpoint(lg-landscape) {
+			display: none;
+		}
+	}
+
+	.fullpage-copy {
+		@include breakpoint(lg-landscape) {
+			width: 35%;
+			text-align: left;
+			top: 55%;
+			left: 5%;
+		}
+	}
+}
+
+#partners {
+
+	.bg-image {
+		background-image: url("../../../img/kiolbassa.jpg");
+		bottom: 0;
+		@include breakpoint(md) {
+			background-position: center 80%;
+		}
+		@include breakpoint(lg-landscape) {
+			width: 70%;
+		}
+	}
+
+	.fullpage-copy {
+		@include breakpoint(lg-landscape) {
+			width: 40%;
+			text-align: left;
+			top: 50%;
+			left: 50%;
+		}
+	}
+}
+
+#year-round {
+
+	.bg-image {
+		background-position: center top;
+		background-image: url('../../../img/golf.jpg');
+		bottom: 0;
+		@include breakpoint(lg-landscape) {
+			width: 70%;
+			right: 0;
+		}
+	}
+
+	.fullpage-copy {
+		@include breakpoint(lg-landscape) {
+			width: 40%;
+			text-align: left;
+			top: 50%;
+			left: 5%;
+		}
+	}
+}	
+
+#explore {
+
+	.bg-image {
+		background-image: url('../../../img/boat.jpg');
+		bottom: 0;
+	}
+
+	.fullpage-copy {
+		@include breakpoint(lg-landscape) {
+			width: 55%;
+			top: 13%;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 }

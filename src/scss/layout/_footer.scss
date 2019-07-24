@@ -1,13 +1,27 @@
 footer {
+    @extend %clearfix;
     padding: 4rem 2rem;
     background: black;
+    @include breakpoint(lg-landscape) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     //* View newsletter.scss for newsletter-specific stylings *
 
+    .footer-player {
+        display: none;
+        position: absolute;
+    }
+
     .footer-info {
-        width: 100%;
         overflow: hidden;
         text-align: center;
+        @include breakpoint(lg-landscape) {
+            text-align: left;
+        }
 
         .social-media {
             width: 100%;
@@ -15,6 +29,10 @@ footer {
             margin-bottom: 3rem;
             display: flex;
             justify-content: center;
+            @include breakpoint(lg-landscape) {
+                margin-top: 0;
+                justify-content: space-between;
+            }
 
             img {
                 width: 3.5rem;
@@ -43,6 +61,5 @@ footer {
                 text-decoration: underline;
             }
         }
-        
     }
 }

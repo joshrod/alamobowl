@@ -26,8 +26,7 @@
 		@media only screen and (min-width: 1720px) {
 			@content;
 		}
-	}
-	@if $point == xl {
+	} @else if $point == xl {
 		@media only screen and (min-width: 1240px) {
 			@content;
 		}
@@ -114,21 +113,6 @@
 			left: 0.25rem;
 			transform: rotate(-135deg);
 		}
-	}
-}
-
-@mixin gradient($pos: top) {
-	width: 100%;
-	position: absolute;
-	height: 80%;
-	z-index: 3;
-	@if ($pos == top) {
-		top: 0;
-	} @else {
-		bottom: 0;
-	}
-	@include breakpoint(md) {
-		height: 55%;
 	}
 }
 

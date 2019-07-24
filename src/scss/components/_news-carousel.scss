@@ -17,6 +17,7 @@
 	}
 
     .news-article {
+        @extend %clearfix;
         width: 100%;
         padding: 2rem;
         @include breakpoint(md) {
@@ -24,10 +25,36 @@
             padding-right: 8%;
         }
 
+        .news-image {
+            @include background;
+            width: 100%;
+            height: 40vh;
+            @include breakpoint(md) {
+                height: 45vh;
+            }
+            @include breakpoint(lg-landscape) {
+                width: 48%;
+                height: 60vh;
+                float: left;
+            }
+        }
+
         .news-copy {
             margin-top: 1.5rem;
             @include breakpoint(md) {
                 margin-top: 4rem;
+            }
+            @include breakpoint(lg-landscape) {
+                width: 48%;
+                float: right;
+                margin-top: 0;
+            }
+
+            .news-category {
+                text-align: left;
+                @include breakpoint(lg-landscape) {
+                    font-size: 2rem;
+                }
             }
 
             .news-heading {
@@ -37,6 +64,9 @@
                 @include breakpoint(md) {
                     font-size: 3rem;
                 }
+                @include breakpoint(lg-landscape) {
+                    font-size: 2.6rem;
+                }
             }
 
             .news-secondary {
@@ -45,6 +75,13 @@
                 @include breakpoint(md) {
                     font-size: 1.8rem;
                 }
+                @include breakpoint(lg-landscape) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .news-paragraph {
+                margin-top: 3rem;
             }
 
             .news-button {
