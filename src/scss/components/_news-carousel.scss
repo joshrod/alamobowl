@@ -14,6 +14,9 @@
             margin-top: 0;
             margin-bottom: 3rem;
         }
+        @include breakpoint(lg-landscape) {
+            display: none;
+        }
 	}
 
     .news-article {
@@ -53,6 +56,7 @@
             .news-category {
                 text-align: left;
                 @include breakpoint(lg-landscape) {
+                    display: block;
                     font-size: 2rem;
                 }
             }

@@ -1,5 +1,9 @@
 .primary-button {
     @include button;
+    @include breakpoint(lg-vertical) {
+        @include button(16rem, 4rem);
+        font-size: 1.6rem;
+    }
 }
 
 .blue-button {

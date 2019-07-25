@@ -4,10 +4,9 @@
     font-size: 4rem;
     @include breakpoint(md) {
         font-size: 6rem;
-        // padding-left: 5rem;
-        // padding-right: 5rem;
-        // padding-left: 20%;
-        // padding-right: 20%;
+    }
+    @include breakpoint(lg-vertical) {
+        font-size: 8rem;
     }
 }
 

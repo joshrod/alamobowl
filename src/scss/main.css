@@ -96,6 +96,22 @@ p {
   font-size: 1.4rem;
 }
 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .primary-button {
+    width: 16rem;
+    height: 4rem;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    font-size: 1.6rem;
+  }
+}
+
 .blue-button {
   background-color: #0070ac;
   border-color: white;
@@ -197,14 +213,24 @@ p {
 
 @media only screen and (min-width: 680px) {
   .full-page .fullpage-copy {
-    top: 28%;
+    width: 70%;
+    top: 13%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   .full-page .fullpage-copy {
-    padding-left: 0;
-    padding-right: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .full-page .fullpage-copy .fullpage-paragraph {
+    font-size: 2rem;
   }
 }
 
@@ -238,6 +264,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1240px) {
+  #fans .bg-image {
+    width: 60%;
+  }
+}
+
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   #fans .white-gradient {
     display: none;
@@ -250,6 +282,12 @@ p {
     text-align: left;
     top: 55%;
     left: 5%;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  #fans .fullpage-copy {
+    width: 30%;
   }
 }
 
@@ -399,6 +437,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .primary-heading {
+    font-size: 8rem;
+  }
+}
+
 .black-heading {
   color: black;
 }
@@ -431,6 +475,12 @@ p {
   .news-carousel .news-category {
     margin-top: 0;
     margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+  .news-carousel .news-category {
+    display: none;
   }
 }
 
@@ -492,6 +542,7 @@ p {
 
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   .news-carousel .news-article .news-copy .news-category {
+    display: block;
     font-size: 2rem;
   }
 }
@@ -551,6 +602,12 @@ p {
   font-weight: 500;
 }
 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .newsletter h1 {
+    font-size: 3.6rem;
+  }
+}
+
 .newsletter p {
   margin-top: 2rem;
   font-family: "Rubik", sans-serif;
@@ -559,11 +616,23 @@ p {
   font-size: 1.4rem;
 }
 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .newsletter p {
+    font-size: 1.6rem;
+  }
+}
+
 .newsletter .fba-logo {
   width: 18rem;
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .newsletter .fba-logo {
+    width: 22rem;
+  }
 }
 
 .newsletter .input-form {
@@ -578,6 +647,12 @@ p {
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .newsletter .input-form {
+    max-width: 65rem;
   }
 }
 
@@ -618,6 +693,14 @@ p {
   text-align: center;
 }
 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .newsletter .input-form #email-input {
+    width: calc(100% - 10rem);
+    height: 4.5rem;
+    font-size: 1.4rem;
+  }
+}
+
 .newsletter .input-form #submit-btn {
   width: 8rem;
   height: 3.5rem;
@@ -626,6 +709,14 @@ p {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .newsletter .input-form #submit-btn {
+    width: 10rem;
+    height: 4.5rem;
+    font-size: 1.4rem;
+  }
 }
 
 footer {
@@ -648,12 +739,28 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    position: relative;
   }
 }
 
 footer .footer-player {
   display: none;
   position: absolute;
+}
+
+@media only screen and (min-width: 1240px) {
+  footer .footer-player {
+    left: 30%;
+    display: block;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  footer .footer-player img {
+    width: auto;
+    height: 40rem;
+  }
 }
 
 footer .footer-info {
@@ -688,12 +795,21 @@ footer .footer-info .social-media {
   }
 }
 
-footer .footer-info .social-media img {
+footer .footer-info .social-media a {
   width: 3.5rem;
 }
 
-footer .footer-info .social-media img:not(:first-of-type) {
+footer .footer-info .social-media a:not(:first-of-type) {
   margin-left: 1rem;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  footer .footer-info .social-media a {
+    width: 5rem;
+  }
+  footer .footer-info .social-media a:not(:first-of-type) {
+    margin-left: 2rem;
+  }
 }
 
 footer .footer-info h5 {
@@ -702,13 +818,31 @@ footer .footer-info h5 {
   font-size: 1.6rem;
 }
 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  footer .footer-info h5 {
+    font-size: 2rem;
+  }
+}
+
 footer .footer-info .address {
   margin-top: 2rem;
   color: white;
 }
 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  footer .footer-info .address {
+    font-size: 2rem;
+  }
+}
+
 footer .footer-info .contact {
   margin-top: 2rem;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  footer .footer-info .contact {
+    font-size: 2rem;
+  }
 }
 
 footer .footer-info .contact a {
@@ -806,6 +940,13 @@ header .menu span:nth-of-type(2n) {
   }
 }
 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .sidebar {
+    width: 38rem;
+    right: -38rem;
+  }
+}
+
 .sidebar .sidebar-nav {
   margin-top: 15%;
   display: block;
@@ -836,6 +977,13 @@ header .menu span:nth-of-type(2n) {
   }
 }
 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .sidebar-open {
+    -webkit-transform: translateX(-38rem);
+            transform: translateX(-38rem);
+  }
+}
+
 .open-sidebar {
   -webkit-transform: translateX(-24rem);
           transform: translateX(-24rem);
@@ -849,6 +997,13 @@ header .menu span:nth-of-type(2n) {
   .open-sidebar {
     -webkit-transform: translateX(-28rem);
             transform: translateX(-28rem);
+  }
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .open-sidebar {
+    -webkit-transform: translateX(-38rem);
+            transform: translateX(-38rem);
   }
 }
 

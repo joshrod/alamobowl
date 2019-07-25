@@ -10,6 +10,10 @@
 		width: 28rem;
 		right: -28rem;
 	}
+	@include breakpoint(lg-vertical) {
+		width: 38rem;
+		right: -38rem;
+	}
 
 	.sidebar-nav {
 		margin-top: 15%;
@@ -31,6 +35,9 @@
 	@include breakpoint(md) {
 		transform: translateX(-28rem);
 	}
+	@include breakpoint(lg-vertical) {
+		transform: translateX(-38rem);
+	}
 }
 
 .open-sidebar {
@@ -38,5 +45,8 @@
 	transition: 0.4s transform;
 	@include breakpoint(md) {
 		transform: translateX(-28rem);
+	}
+	@include breakpoint(lg-vertical) {
+		transform: translateX(-38rem);
 	}
 }

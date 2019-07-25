@@ -7,6 +7,9 @@
         font-size: 2.4rem;
         color: white;
         font-weight: 500;
+        @include breakpoint(lg-vertical) {
+            font-size: 3.6rem;
+        }
     }
 
     p {
@@ -15,6 +18,9 @@
         color: white;
         font-weight: 500;
         font-size: 1.4rem;
+        @include breakpoint(lg-vertical) {
+            font-size: 1.6rem;
+        }
     }
 
     .fba-logo {
@@ -22,6 +28,9 @@
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
+        @include breakpoint(lg-vertical) {
+            width: 22rem;
+        }
     }
 
     .input-form {
@@ -33,7 +42,9 @@
             max-width: 50rem;
             margin-left: auto;
             margin-right: auto;
-
+        }
+        @include breakpoint(lg-vertical) {
+            max-width: 65rem;
         }
 
         #email-input {
@@ -52,6 +63,11 @@
                 font-style: italic;
                 text-align: center;
             }
+            @include breakpoint(lg-vertical) {
+                width: calc(100% - 10rem);
+                height: 4.5rem;
+                font-size: 1.4rem;
+            }
         }
 
         #submit-btn {
@@ -62,6 +78,11 @@
             font-family: $rubik;
             font-weight: bold;
             text-transform: uppercase;
+            @include breakpoint(lg-vertical) {
+                width: 10rem;
+                height: 4.5rem;
+                font-size: 1.4rem;
+            }
         }
     }
 }

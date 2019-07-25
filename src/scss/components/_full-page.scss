@@ -25,11 +25,19 @@
 		top: 50%;
 		transform: translateY(-50%);
 		@include breakpoint(md) {
-			top: 28%;
+			width: 70%;
+			top: 13%;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 		@include breakpoint(lg-landscape) {
-			padding-left: 0;
-			padding-right: 0;
+			transform: translate(0, -50%);
+		}
+
+		.fullpage-paragraph {
+			@include breakpoint(lg-vertical) {
+				font-size: 2rem;
+			}
 		}
 
 		.white-copy {
@@ -61,6 +69,9 @@
 			right: 0;
 			background-position: right center;
 		}
+		@include breakpoint(xl) {
+			width: 60%;
+		}
 	}
 
 	.white-gradient {
@@ -75,6 +86,9 @@
 			text-align: left;
 			top: 55%;
 			left: 5%;
+		}
+		@include breakpoint(xl) {
+			width: 30%;
 		}
 	}
 }

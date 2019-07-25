@@ -30,8 +30,8 @@
 		@media only screen and (min-width: 1240px) {
 			@content;
 		}
-	} @else if $point == lg {
-		@media only screen and (min-width: 1024px) {
+	} @else if $point == lg-vertical {
+		@media only screen and (min-width: 1024px) and (orientation: portrait) {
 			@content;
 		}
 	}  @else if $point == lg-landscape {
