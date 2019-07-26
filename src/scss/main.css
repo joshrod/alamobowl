@@ -266,7 +266,7 @@ p {
 
 @media only screen and (min-width: 1240px) {
   #fans .bg-image {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -722,10 +722,18 @@ p {
 footer {
   padding: 4rem 2rem;
   background: black;
+  position: relative;
 }
 
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   footer {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+  footer .footer-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -739,7 +747,6 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    position: relative;
   }
 }
 
@@ -750,7 +757,7 @@ footer .footer-player {
 
 @media only screen and (min-width: 1240px) {
   footer .footer-player {
-    left: 30%;
+    left: 25%;
     display: block;
     bottom: 0;
   }

@@ -1,93 +1,100 @@
 footer {
-    @extend %clearfix;
-    padding: 4rem 2rem;
-    background: black;
-    @include breakpoint(lg-landscape) {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-    }
+	@extend %clearfix;
+	padding: 4rem 2rem;
+	background: black;
+	position: relative;
+	@include breakpoint(lg-landscape) {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
 
-    //* View newsletter.scss for newsletter-specific stylings *
+	.footer-wrapper {
+		@include breakpoint(lg-landscape) {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
 
-    .footer-player {
-        display: none;
-        position: absolute;
-        @include breakpoint(xl) {
-            left: 30%;
-            display: block;
-            bottom: 0;
-        }
-        
-        img {
-            @include breakpoint(xl) {
-                width: auto;
-                height: 40rem;
-            }
-        }
-    }
+	//* View newsletter.scss for newsletter-specific stylings *
 
-    .footer-info {
-        overflow: hidden;
-        text-align: center;
-        @include breakpoint(lg-landscape) {
-            text-align: left;
-        }
+	.footer-player {
+		display: none;
+		position: absolute;
+		@include breakpoint(xl) {
+			left: 25%;
+			display: block;
+			bottom: 0;
+		}
 
-        .social-media {
-            width: 100%;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-            display: flex;
-            justify-content: center;
-            @include breakpoint(lg-landscape) {
-                margin-top: 0;
-                justify-content: space-between;
-            }
+		img {
+			@include breakpoint(xl) {
+				width: auto;
+				height: 40rem;
+			}
+		}
+	}
 
-            a {
-                width: 3.5rem;
-                &:not(:first-of-type) {
-                    margin-left: 1rem;
-                }
-                @include breakpoint(lg-vertical) {
-                    width: 5rem;
-                    &:not(:first-of-type) {
-                        margin-left: 2rem;
-                    }
-                }
-            }
-        }
+	.footer-info {
+		overflow: hidden;
+		text-align: center;
+		@include breakpoint(lg-landscape) {
+			text-align: left;
+		}
 
-        h5 {
-            color: white;
-            text-transform: uppercase;
-            font-size: 1.6rem;
-            @include breakpoint(lg-vertical) {
-                font-size: 2rem;
-            }
-        }
+		.social-media {
+			width: 100%;
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			display: flex;
+			justify-content: center;
+			@include breakpoint(lg-landscape) {
+				margin-top: 0;
+				justify-content: space-between;
+			}
 
-        .address {
-            margin-top: 2rem;
-            color: white;
-            @include breakpoint(lg-vertical) {
-                font-size: 2rem;
-            }
-        }
+			a {
+				width: 3.5rem;
+				&:not(:first-of-type) {
+					margin-left: 1rem;
+				}
+				@include breakpoint(lg-vertical) {
+					width: 5rem;
+					&:not(:first-of-type) {
+						margin-left: 2rem;
+					}
+				}
+			}
+		}
 
-        .contact {
-            margin-top: 2rem;
-            @include breakpoint(lg-vertical) {
-                font-size: 2rem;
-            }
-            
-            a {
-                color: white;
-                text-decoration: underline;
-            }
-        }
-    }
+		h5 {
+			color: white;
+			text-transform: uppercase;
+			font-size: 1.6rem;
+			@include breakpoint(lg-vertical) {
+				font-size: 2rem;
+			}
+		}
+
+		.address {
+			margin-top: 2rem;
+			color: white;
+			@include breakpoint(lg-vertical) {
+				font-size: 2rem;
+			}
+		}
+
+		.contact {
+			margin-top: 2rem;
+			@include breakpoint(lg-vertical) {
+				font-size: 2rem;
+			}
+
+			a {
+				color: white;
+				text-decoration: underline;
+			}
+		}
+	}
 }

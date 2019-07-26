@@ -59,7 +59,6 @@
 }
 
 #fans {
-
 	.bg-image {
 		background-image: url("../../../img/guys.jpg");
 		bottom: 0;
@@ -70,7 +69,7 @@
 			background-position: right center;
 		}
 		@include breakpoint(xl) {
-			width: 60%;
+			width: 70%;
 		}
 	}
 
@@ -94,7 +93,6 @@
 }
 
 #partners {
-
 	.bg-image {
 		background-image: url("../../../img/kiolbassa.jpg");
 		bottom: 0;
@@ -117,10 +115,9 @@
 }
 
 #year-round {
-
 	.bg-image {
 		background-position: center top;
-		background-image: url('../../../img/golf.jpg');
+		background-image: url("../../../img/golf.jpg");
 		bottom: 0;
 		@include breakpoint(lg-landscape) {
 			width: 70%;
@@ -136,12 +133,11 @@
 			left: 5%;
 		}
 	}
-}	
+}
 
 #explore {
-
 	.bg-image {
-		background-image: url('../../../img/boat.jpg');
+		background-image: url("../../../img/boat.jpg");
 		bottom: 0;
 	}
 
