@@ -3,6 +3,7 @@ footer {
 	padding: 4rem 2rem;
 	background: black;
 	position: relative;
+	display: none;
 	@include breakpoint(lg-landscape) {
 		padding-left: 8%;
 		padding-right: 8%;

@@ -1,6 +1,10 @@
 .full-page {
 	width: 100%;
-	position: relative;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
 
 	.bg-image {
 		@include background;
@@ -56,6 +60,11 @@
 			margin-top: 2rem;
 		}
 	}
+}
+
+.displayed {
+	visibility: visible;
+	z-index: 1;
 }
 
 #fans {

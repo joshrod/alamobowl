@@ -22,4 +22,16 @@ window.onload = () => {
             footer.classList.remove('open-sidebar');
         }
     }
+
+    window.addEventListener('wheel', _.throttle((e) => {checkScrollDirection(e);}, 1500));
+
+}
+
+function checkScrollDirection(e) {
+    if (e.deltaY < 0) {
+        console.log('scrolling up');
+    }
+    else if (e.deltaY > 0) {
+        console.log('scrolling down');
+    }
 }
