@@ -4,6 +4,9 @@ const mainContent = document.querySelector('main');
 const footer = document.querySelector('footer');
 const navbar = document.querySelector('header');
 
+const sections = document.querySelectorAll('.page');
+
+
 window.onload = () => {
     
 
@@ -23,8 +26,12 @@ window.onload = () => {
         }
     }
 
-    window.addEventListener('wheel', _.throttle((e) => {checkScrollDirection(e);}, 1500));
+    window.addEventListener('wheel', _.throttle((e) => {checkScrollDirection(e);}, 1500, {'trailing': false}));
+}
 
+function animationHandler() {
+    let currentSection = sections.classList.contains('displayed');
+    console.log(currentSection);
 }
 
 function checkScrollDirection(e) {
@@ -35,3 +42,38 @@ function checkScrollDirection(e) {
         console.log('scrolling down');
     }
 }
+
+
+// function animationHandler(fromPage, toPage, animation) {
+// 	let counterpart = "";
+// 	overlay.style.display = "block";
+// 	switch (animation) {
+// 		case "moveToLeft":
+// 			counterpart = "moveFromRight";
+// 			break;
+// 		case "moveToRight":
+// 			counterpart = "moveFromLeft";
+// 			break;
+// 		case "rotateFall":
+// 			counterpart = "scaleUp";
+// 			fromPage.classList.add("ontop");
+// 			break;
+// 		case "scaleDown":
+// 			counterpart = "scaleUpDown";
+// 			break;
+// 		default:
+// 			break;
+// 	}
+// 	fromPage.classList.add(animation);
+// 	toPage.classList.add(counterpart);
+// 	toPage.classList.add("displayed");
+// 	const removeClasses = function() {
+// 		fromPage.classList.remove("displayed");
+// 		fromPage.classList.remove(animation);
+// 		toPage.classList.remove(counterpart);
+// 		fromPage.classList.remove("ontop");
+// 		overlay.style.display = "none";
+// 		fromPage.removeEventListener("animationend", removeClasses);
+// 	};
+// 	fromPage.addEventListener("animationend", removeClasses);
+// }
