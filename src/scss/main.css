@@ -39,9 +39,11 @@ body {
   position: relative;
   font-size: 16px;
   font-size: 1.6rem;
+  overflow: hidden;
 }
 
-main, footer {
+main,
+footer {
   -webkit-transition: 0.4s -webkit-transform;
   transition: 0.4s -webkit-transform;
   transition: 0.4s transform;
@@ -54,12 +56,22 @@ img {
   display: block;
 }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
@@ -104,6 +116,19 @@ p {
 }
 
 /* ANIMATIONS */
+@-webkit-keyframes moveFromTop {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+@keyframes moveFromTop {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
 @-webkit-keyframes moveToTop {
   from {
   }
@@ -112,6 +137,7 @@ p {
             transform: translateY(-100%);
   }
 }
+
 @keyframes moveToTop {
   from {
   }
@@ -135,7 +161,7 @@ p {
   }
 }
 
-@-webkit-keyframes movetoBottom {
+@-webkit-keyframes moveToBottom {
   from {
   }
   to {
@@ -144,7 +170,7 @@ p {
   }
 }
 
-@keyframes movetoBottom {
+@keyframes moveToBottom {
   from {
   }
   to {
@@ -431,6 +457,10 @@ p {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+}
+
+#news {
+  background-color: white;
 }
 
 .gradient {
