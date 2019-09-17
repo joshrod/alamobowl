@@ -67,7 +67,12 @@
   z-index: 1;
 }
 
+.on-top {
+  z-index: 98;
+}
+
 #fans {
+  background-color: white;
   .bg-image {
     background-image: url("../../../img/guys.jpg");
     bottom: 0;

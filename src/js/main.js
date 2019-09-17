@@ -6,7 +6,8 @@ const navbar = document.querySelector("header");
 
 const sections = document.querySelectorAll(".full-page");
 
-let currentSection = document.querySelector(".displayed");
+let sectionNum = 0;
+let currentSection = sections[sectionNum];
 let nextSection;
 let prevSection;
 
@@ -25,7 +26,7 @@ window.onload = () => {
     }
   };
 
-  //TODO: currentSection is not being updated. FIX THIS!
+  // * When manually manipulating animationHandler() MAKE SURE YOU SET THE nextSection AND prevSection VARIABLES IN YOUR CODE!!!!
 
   window.addEventListener(
     "wheel",
@@ -34,21 +35,30 @@ window.onload = () => {
         for (let i = 0; i < sections.length; i++) {
           const section = sections[i];
 
-          if (section.classList.contains("displayed")) {
+          if (section === currentSection) {
             nextSection = sections[i + 1];
+            if (nextSection === sections[5]) {
+              nextSection = sections[4];
+            }
             prevSection = sections[i - 1];
+            if (prevSection === sections[-1]) {
+              prevSection = sections[0];
+            }
           }
         }
         let direction = checkScrollDirection(e);
         if (direction === "up") {
           console.log("scrolled up");
+          animationHandler(currentSection, prevSection, "moveToBottomEasing");
+          sectionNum--;
         } else if (direction === "down") {
           console.log("scrolled down");
           animationHandler(currentSection, nextSection, "moveToTopEasing");
-          currentSection = document.querySelector(".displayed");
+          sectionNum++;
         }
+        currentSection = sections[sectionNum];
       },
-      1500,
+      1000,
       { trailing: false }
     )
   );
@@ -70,9 +80,11 @@ function animationHandler(fromPage, toPage, animation) {
   switch (animation) {
     case "moveToTopEasing":
       counterpart = "moveFromBottom";
+      fromPage.classList.add("on-top");
       break;
     case "moveToBottomEasing":
       counterpart = "moveFromTop";
+      fromPage.classList.add("on-top");
       break;
   }
   fromPage.classList.add(animation);
@@ -82,7 +94,19 @@ function animationHandler(fromPage, toPage, animation) {
     fromPage.classList.remove("displayed");
     fromPage.classList.remove(animation);
     toPage.classList.remove(counterpart);
+    fromPage.classList.remove("on-top");
+    toPage.classList.remove("on-top");
     fromPage.removeEventListener("animationend", removeClasses);
   };
   fromPage.addEventListener("animationend", removeClasses);
+}
+
+function showFooter() {
+  footer.style.display = "block";
+  document.body.style.overflow = "scroll";
+}
+
+function hideFooter() {
+  footer.style.display = "none";
+  document.body.style.overflow = "hidden";
 }

@@ -2,16 +2,16 @@
   animation: moveToTop 0.7s ease-in-out both;
 }
 
-.movetoBottomEasing {
-  animation: moveToTop 0.7s ease-in-out both;
+.moveToBottomEasing {
+  animation: moveToBottom 0.7s ease-in-out both;
 }
 
 .moveFromBottom {
   animation: moveFromBottom 0.6s ease both;
 }
 
-.moveToBottom {
-  animation: movetoBottom 0.6s ease both;
+.moveFromTop {
+  animation: moveFromTop 0.7s ease both;
 }
 
 /* ANIMATIONS */
