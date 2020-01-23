@@ -1,41 +1,41 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  margin: 0;
-  position: relative;
-  font-size: 16px;
-  font-size: 1.6rem;
-  overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    position: relative;
+    font-size: 16px;
+    font-size: 1.6rem;
+    overflow: hidden;
 }
 
 main,
 footer {
-  transition: 0.4s transform;
+    transition: 0.4s transform;
 }
 
 section {
-  @extend %clearfix;
+    @extend %clearfix;
 }
 
 img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 h1,
@@ -44,8 +44,8 @@ h3,
 h4,
 h5,
 p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -54,22 +54,22 @@ h3,
 h4,
 h5,
 a {
-  font-family: $rubik;
-  font-weight: 400;
+    font-family: $rubik;
+    font-weight: 400;
 }
 
 a {
-  text-decoration: none;
-  display: block;
+    text-decoration: none;
+    display: block;
 }
 
 p {
-  font-family: $karla;
+    font-family: $karla;
 }
 
 .desktop-only {
-  display: none;
-  @include breakpoint(lg-landscape) {
-    display: block;
-  }
+    display: none;
+    @include breakpoint(lg-landscape) {
+        display: block;
+    }
 }

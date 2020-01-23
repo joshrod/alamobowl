@@ -1,101 +1,104 @@
 footer {
-	@extend %clearfix;
-	padding: 4rem 2rem;
-	background: black;
-	position: relative;
-	display: none;
-	@include breakpoint(lg-landscape) {
-		padding-left: 8%;
-		padding-right: 8%;
-	}
+    @extend %clearfix;
+    padding: 4rem 2rem;
+    background: black;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    // position: relative;
+    // display: none;
+    @include breakpoint(lg-landscape) {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
 
-	.footer-wrapper {
-		@include breakpoint(lg-landscape) {
-			display: flex;
-			flex-direction: row-reverse;
-			align-items: center;
-			justify-content: space-between;
-		}
-	}
+    .footer-wrapper {
+        @include breakpoint(lg-landscape) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 
-	//* View newsletter.scss for newsletter-specific stylings *
+    //* View newsletter.scss for newsletter-specific stylings *
 
-	.footer-player {
-		display: none;
-		position: absolute;
-		@include breakpoint(xl) {
-			left: 25%;
-			display: block;
-			bottom: 0;
-		}
+    .footer-player {
+        display: none;
+        position: absolute;
+        @include breakpoint(xl) {
+            left: 25%;
+            display: block;
+            bottom: 0;
+        }
 
-		img {
-			@include breakpoint(xl) {
-				width: auto;
-				height: 40rem;
-			}
-		}
-	}
+        img {
+            @include breakpoint(xl) {
+                width: auto;
+                height: 40rem;
+            }
+        }
+    }
 
-	.footer-info {
-		overflow: hidden;
-		text-align: center;
-		@include breakpoint(lg-landscape) {
-			text-align: left;
-		}
+    .footer-info {
+        overflow: hidden;
+        text-align: center;
+        @include breakpoint(lg-landscape) {
+            text-align: left;
+        }
 
-		.social-media {
-			width: 100%;
-			margin-top: 3rem;
-			margin-bottom: 3rem;
-			display: flex;
-			justify-content: center;
-			@include breakpoint(lg-landscape) {
-				margin-top: 0;
-				justify-content: space-between;
-			}
+        .social-media {
+            width: 100%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: center;
+            @include breakpoint(lg-landscape) {
+                margin-top: 0;
+                justify-content: space-between;
+            }
 
-			a {
-				width: 3.5rem;
-				&:not(:first-of-type) {
-					margin-left: 1rem;
-				}
-				@include breakpoint(lg-vertical) {
-					width: 5rem;
-					&:not(:first-of-type) {
-						margin-left: 2rem;
-					}
-				}
-			}
-		}
+            a {
+                width: 3.5rem;
+                &:not(:first-of-type) {
+                    margin-left: 1rem;
+                }
+                @include breakpoint(lg-vertical) {
+                    width: 5rem;
+                    &:not(:first-of-type) {
+                        margin-left: 2rem;
+                    }
+                }
+            }
+        }
 
-		h5 {
-			color: white;
-			text-transform: uppercase;
-			font-size: 1.6rem;
-			@include breakpoint(lg-vertical) {
-				font-size: 2rem;
-			}
-		}
+        h5 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            @include breakpoint(lg-vertical) {
+                font-size: 2rem;
+            }
+        }
 
-		.address {
-			margin-top: 2rem;
-			color: white;
-			@include breakpoint(lg-vertical) {
-				font-size: 2rem;
-			}
-		}
+        .address {
+            margin-top: 2rem;
+            color: white;
+            @include breakpoint(lg-vertical) {
+                font-size: 2rem;
+            }
+        }
 
-		.contact {
-			margin-top: 2rem;
-			@include breakpoint(lg-vertical) {
-				font-size: 2rem;
-			}
+        .contact {
+            margin-top: 2rem;
+            @include breakpoint(lg-vertical) {
+                font-size: 2rem;
+            }
 
-			a {
-				color: white;
-				text-decoration: underline;
-			}
-		}
-	}
+            a {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
 }

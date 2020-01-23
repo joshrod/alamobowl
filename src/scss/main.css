@@ -469,6 +469,7 @@ p {
 
 #news {
   background-color: white;
+  overflow: auto;
 }
 
 .gradient {
@@ -839,8 +840,9 @@ p {
 footer {
   padding: 4rem 2rem;
   background: black;
-  position: relative;
-  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
